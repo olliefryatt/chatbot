@@ -1,44 +1,47 @@
-// CV Data Store - Loads from environment variables if available
+// MOCK CV DATA FOR DEMONSTRATION PURPOSES ONLY
+// This is a simplified example to show how the AI chatbot training data is structured.
+// The actual CV data used in production is loaded from environment variables.
+
 const cvData = process.env.CV_DATA ? 
     JSON.parse(process.env.CV_DATA) : 
     {
         personal: {
-            name: "Oliver Fryatt",
-            title: "Fintech & Impact Investment Leader",
-            location: "New York, UK",
-            linkedin: "https://www.linkedin.com/in/ollie-fryatt/",
-            github: "https://github.com/olliefryatt",
-            summary: "Technology leader with experience in fintech, impact investing, and product development."
+            name: "Example Person",
+            title: "Software Developer",
+            location: "London, UK",
+            linkedin: "https://www.linkedin.com/in/example",
+            github: "https://github.com/example",
+            summary: "Experienced developer with a passion for AI and machine learning."
         },
         experience: [
             {
-                company: "Lendable",
-                title: "Head of Projects & Products",
-                period: "2023 - Present",
-                location: "New York",
+                company: "Tech Corp",
+                title: "Senior Developer",
+                period: "2020 - Present",
+                location: "London, UK",
                 responsibilities: [
-                    "Leading product and project development for impact investment fund",
-                    "Developing AI-powered tools and strategic partnerships"
+                    "Leading development of AI products",
+                    "Managing team of junior developers"
                 ]
             }
         ],
         education: [
             {
-                institution: "Sciences Po, Paris",
-                degree: "Master in Economics",
+                institution: "University of Technology",
+                degree: "MSc Computer Science",
                 period: "2018 - 2020",
-                location: "Paris, France"
+                location: "London, UK"
             }
         ],
         skills: {
             technical: [
-                "Fintech Product Development",
-                "AI & Machine Learning",
-                "Data Analytics"
+                "Python",
+                "Machine Learning",
+                "Web Development"
             ],
             soft: [
                 "Leadership",
-                "Project Management"
+                "Communication"
             ]
         }
     };
