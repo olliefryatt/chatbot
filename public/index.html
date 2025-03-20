@@ -308,12 +308,16 @@
                 // Hide loading indicator
                 loadingIndicator.style.display = 'none';
 
-                // Add bot response
-                addMessage(data.reply, false);
+                if (data.error) {
+                    addMessage("Oh sorry, this isn't working. I think Ollie forgot to put any additional credit on his OpenAI account! 🙈", false);
+                } else {
+                    // Add bot response
+                    addMessage(data.reply, false);
+                }
             } catch (error) {
                 console.error('Error:', error);
                 loadingIndicator.style.display = 'none';
-                addMessage('Sorry, I encountered an error. Please try again.', false);
+                addMessage("Oh sorry, this isn't working. I think Ollie forgot to put any additional credit on his OpenAI account! 🙈", false);
             }
 
             // Re-enable input and button
@@ -332,7 +336,7 @@
 
         // Add welcome message
         window.addEventListener('load', () => {
-            addMessage("Hi! I'm Oliver's AI assistant. I can tell you about his professional background, experience, and skills. What would you like to know?", false);
+            addMessage("Hi! I'm Ollie's AI assistant. He built me using OpenAI AI tooling and has trained me on his CV and personal history. What would you like to know? FYI sometimes I do hallucinate!", false);
         });
     </script>
 </body>
