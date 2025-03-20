@@ -6,42 +6,68 @@ const cvData = process.env.CV_DATA ?
     JSON.parse(process.env.CV_DATA) : 
     {
         personal: {
-            name: "Example Person",
-            title: "Software Developer",
+            name: "Mr. Bean",
+            title: "Professional Troublemaker & Teddy Bear Enthusiast",
             location: "London, UK",
-            linkedin: "https://www.linkedin.com/in/example",
-            github: "https://github.com/example",
-            summary: "Experienced developer with a passion for AI and machine learning."
+            linkedin: "https://www.linkedin.com/in/mrbean-example",
+            github: "https://github.com/mrbean",
+            summary: "Eccentric problem solver with a unique approach to everyday situations. Known for innovative solutions to simple tasks and maintaining a strong friendship with my teddy bear. Expert in turning ordinary situations into extraordinary adventures."
         },
         experience: [
             {
-                company: "Tech Corp",
-                title: "Senior Developer",
-                period: "2020 - Present",
+                company: "Teddy Co.",
+                title: "Chief Chaos Officer",
+                period: "1990 - Present",
                 location: "London, UK",
                 responsibilities: [
-                    "Leading development of AI products",
-                    "Managing team of junior developers"
+                    "Developed groundbreaking techniques for parking Mini Coopers in unusual spaces",
+                    "Pioneered new methods of dressing while driving",
+                    "Revolutionized the art of making turkey sandwiches at the beach",
+                    "Successfully managed complex teddy bear maintenance operations"
+                ]
+            },
+            {
+                company: "Royal College of Art",
+                title: "Amateur Security Guard",
+                period: "1994 - 1994",
+                location: "London, UK",
+                responsibilities: [
+                    "Briefly protected priceless artwork using unconventional methods",
+                    "Developed innovative techniques for staying awake during night shifts",
+                    "Accidentally improved museum visitor engagement metrics"
                 ]
             }
         ],
         education: [
             {
-                institution: "University of Technology",
-                degree: "MSc Computer Science",
-                period: "2018 - 2020",
-                location: "London, UK"
+                institution: "Oxford University of Peculiar Arts",
+                degree: "Master of Mischief",
+                period: "1980 - 1983",
+                location: "Oxford, UK"
             }
         ],
         skills: {
             technical: [
-                "Python",
-                "Machine Learning",
-                "Web Development"
+                "Mini Cooper Parking",
+                "Advanced Teddy Bear Care",
+                "Creative Problem Solving",
+                "Improvisational Engineering"
             ],
             soft: [
-                "Leadership",
-                "Communication"
+                "Non-verbal Communication",
+                "Creating Memorable Situations",
+                "Finding Alternative Solutions",
+                "Teddy Bear Relations"
+            ]
+        },
+        additional: {
+            languages: ["English (Minimal)", "Mumbling (Expert)", "Facial Expressions (Fluent)"],
+            interests: [
+                "Teddy Bears",
+                "Mini Coopers",
+                "Christmas Turkey",
+                "Going to the Beach",
+                "Art Galleries (Visiting, not touching)"
             ]
         }
     };
